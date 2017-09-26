@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Andres9888/-andres-portfolio/issues"
   },
-  "homepage": "https://github.com/Andres9888/-andres-portfolio#readme"
+  "homepage": "https://github.com/Andres9888/-andres-portfolio#readme",
+  "dependencies": {
+    "particlesjs": "^2.0.2"
+  }
 }
