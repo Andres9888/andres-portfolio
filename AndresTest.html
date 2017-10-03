@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
  <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+       
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
 
@@ -14,20 +17,10 @@
  
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
-
+<link rel="stylesheet" media="screen" href="node_modules/particles.js/demo/css/style.css">
 
 <script src="node_modules/typed.js/lib/typed.js" type="text/javascript"></script>
 
-
-<script>
-
-window.onload = function() {
-  Particles.init({
-    selector: '.background'
-  });
-};
-
-</script>
 
 
 
@@ -43,13 +36,6 @@ body {
   padding: 0;
 }
  
-.background {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
 
 a{
 	font-size:16px;
@@ -58,7 +44,7 @@ a{
 	background-color:;
 }
 
-ul.side-nav-fixed{
+nav ul {
     left: 0;
     position: fixed;
     width:25%;
@@ -66,7 +52,7 @@ ul.side-nav-fixed{
     top:0;
     margin:0;
     padding:0;
-    overflow:auto;
+    
 }
 
 nav li {border-style: dashed;
@@ -90,6 +76,24 @@ nav a{
 
 }
 
+a:link{
+
+color:yellow;
+
+}
+
+span#typed {
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+    font-size:32px;
+  font-family: 'Montserrat', sans-serif;
+}
 
 
 @media  (max-width: 640px){
@@ -123,72 +127,40 @@ nav a{
   <li><a href=#><i class="fa fa-id-card-o" aria-hidden="true"></i>About</span></a></li>
   <li><a href=#><span><i class="fa fa-sliders" aria-hidden="true"></i></span>Skills</a></li>
   <li><a href=#><i class="fa fa-briefcase" aria-hidden="true"></i>Experience</a></li>
- 
-  
-  
-  <li><a href=#><i class="fa fa-university" aria-hidden="true"></i>Education</a></li>
+ <li><a href=#><i class="fa fa-university" aria-hidden="true"></i>Education</a></li>
   <li><a href=#><i class="fa fa-folder-open" aria-hidden="true"></i>Portfolio</a></li>
   <li><a href=#><span><i class="fa fa-volume-control-phone" aria-hidden="true"></i>Contact</span></a></li>
   <li><a href=#><span><i class="fa fa-floppy-o" aria-hidden="true"></i>My Resume.pdf</span> </a></li>
 </ul>
-<nav/>
+</nav>
 
-<div style="float:left; margin-left:25%;padding:1px 16px;height:1000px;">
-<div id="typed-strings">
-    <p>Typed.js is a <strong>JavaScript</strong> library.</p>
-    <p>It <em>types</em> out sentences.</p>
+<div id ="particles-js" style="margin-left:25%;padding:1px 16px; background-color: black; color:white">
+<div id="typed-strings" style="color:white;">
+    <p>Hello,my name is  <strong>Andres</strong> Gutierrez.</p>
+    <p> I do Websites</p>
+    <p> Accounting</p>
+    <p> And Speak a Few Languages </p>
 </div>
 <span id="typed"></span>
+
 <script>
   var typed = new Typed('#typed', {
     stringsElement: '#typed-strings'
   });
 </script>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
 
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<p>Read More.</p>
-<div/>
+</div>
 
 
 
 
   
+
+<script src="node_modules/particles.js/particles.js"></script> 
+<script src="app.js"></script>
   
-  <canvas class="background"></canvas>
   
-  <script src="node_modules/particlesjs/dist/particles.min.js"></script> 
-</body>
+  
+
 </body>
 </html>
