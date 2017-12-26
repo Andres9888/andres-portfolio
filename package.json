@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/Andres9888/-andres-portfolio#readme",
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "particles.js": "^2.0.0",
     "particlesjs": "^2.0.2",
-    "typed.js": "^2.0.6"
+    "typed.js": "^2.0.6",
+    "waypoints": "^4.0.1"
   }
 }
