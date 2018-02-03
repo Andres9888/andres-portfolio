@@ -1,0 +1,16 @@
+.cirlce-progressbar-container {
+    vertical-align: middle;
+    min-height: 40vh;
+    flex: 1 1 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle1, #circle2, #circle3 {
+   margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
