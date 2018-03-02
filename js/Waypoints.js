@@ -5,13 +5,18 @@ $(window).scroll(function(){
   });
    // jQuery methods go here...
 $('#s1').addClass("active");
+$('#home-icon').addClass("active");
 
 
 $('#2').waypoint(function() {
 
   $("#s1").removeClass("active");
- 
+  $('#home-icon').removeClass("active");
+
+
+
 $("#s2").addClass("active");
+$("#about-icon").addClass("active");
   
   
 },
@@ -22,10 +27,19 @@ $("#s2").addClass("active");
 $('#skills-3').waypoint(function() {
 
   $("#s2").removeClass("active");
+  $('#about-icon').removeClass("active");
  
 $("#s3").addClass("active");
+$("#skills-icon").addClass("active");
+
+
+
 },
 { offset: 120 });
+
+
+
+
 
 
 var skillsTrigger =
@@ -36,176 +50,82 @@ $(function() {
   $('.skills__progressbar').each(function(){
     var t = $(this);
     var dataperc = t.attr('data-perc'),
-        barperc = Math.round(dataperc*5.56);
-    t.find('.bar').animate({width:barperc}, dataperc*25);
+        barperc = Math.floor((dataperc*5.56 / 554) * 100);
+    t.find('.bar').animate({width:barperc+"%"}, dataperc*25,);
     t.find('.label').append('<div class="perc"></div>');
     
     function perc() {
       var length = t.find('.bar').css('width'),
-        perc = Math.round(parseInt(length)/5.56),
-        labelpos = (parseInt(length)-2);
+      labelpos = (parseInt(length)-2);
       t.find('.label').css('left', labelpos);
-      t.find('.perc').text(perc+'%');
+      t.find('.perc').text(barperc +'%');
     }
     perc();
     setInterval(perc, 0); 
   });
+
+bar1.animate(1);
+bar2.animate(0.90);
+bar3.animate(0.60);  
 });
 
-   var bar = new ProgressBar.Circle(circle1, {
-  color: '#0af',
-  strokeWidth: 6,
-  trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
-  text: {
-    autoStyleContainer: false
-  },
-  from: {
-    color: '#0af',
-    width: 1
-  },
-  to: {
-    color: '#0076D5',
-    width: 6
-  },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
-
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
-
-  }
-});
-bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-bar.text.style.fontSize = '2.5rem';
-bar.text.style.marginTop = '-0.3rem';
-   bar.animate(0.99);
-   
-   
-   var bar = new ProgressBar.Circle(circle2, {
-  color: '#0af',
-  strokeWidth: 6,
-  trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
-  text: {
-    autoStyleContainer: false
-  },
-  from: {
-    color: '#0af',
-    width: 1
-  },
-  to: {
-    color: '#0076D5',
-    width: 6
-  },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
-
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
-
-  }
-});
-bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-bar.text.style.fontSize = '2.5rem';
-bar.text.style.marginTop = '-0.3rem';
-   bar.animate(0.90);
-   
-   
-   
-   var bar = new ProgressBar.Circle(circle3, {
-  color: '#0af',
-  strokeWidth: 6,
-  trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
-  text: {
-    autoStyleContainer: false
-  },
-  from: {
-    color: '#0af',
-    width: 1
-  },
-  to: {
-    color: '#0076D5',
-    width: 6
-  },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
-
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
-
-  }
-});
-bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-bar.text.style.fontSize = '2.5rem';
-bar.text.style.marginTop = '-0.3rem';
-   bar.animate(0.82);
-   
-   
-   var bar = new ProgressBar.Circle(circle4, {
-  color: '#0af',
-  strokeWidth: 6,
-  trailWidth: 1,
-  easing: 'easeInOut',
-  duration: 1400,
-  text: {
-    autoStyleContainer: false
-  },
-  from: {
-    color: '#0af',
-    width: 1
-  },
-  to: {
-    color: '#0076D5',
-    width: 6
-  },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
-
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
-
-  }
-
-
-
-});
-bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-bar.text.style.fontSize = '2.5rem';
-bar.text.style.marginTop = '-0.3rem';
-   bar.animate(0.93);
+   this.destroy()
  
 },
 { offset: 120 });
 
+
+$('#4').waypoint(function() {
+
+  $("#s3").removeClass("active");
+  $('#skills-icon').removeClass("active");
+ 
+$("#s4").addClass("active");
+$("#experience-icon").addClass("active");
+
+
+
+},
+{ offset: 120 });
+
+$('#5').waypoint(function() {
+
+  $("#s4").removeClass("active");
+  $('#experience-icon').removeClass("active");
+ 
+$("#s5").addClass("active");
+$("#education-icon").addClass("active");
+
+
+
+},
+{ offset: 120 });
+
+$('#6').waypoint(function() {
+
+  $("#s5").removeClass("active");
+  $('#education-icon').removeClass("active");
+ 
+$("#s6").addClass("active");
+$("#portfolio-icon").addClass("active");
+
+
+
+},
+{ offset: 120 });
+
+$('#7').waypoint(function() {
+
+  $("#s6").removeClass("active");
+  $('#portfolio-icon').removeClass("active");
+ 
+$("#s7").addClass("active");
+$("#contact-icon").addClass("active");
+
+
+
+},
+{ offset: 120 });
 
 
 

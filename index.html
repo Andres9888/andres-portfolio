@@ -11,18 +11,17 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
- 
-
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
- 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/main.css">
 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 <link rel="stylesheet" href="node_modules/particles.js/demo/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="node_modules/typed.js/lib/typed.js"></script>
 
-<script src="node_modules/typed.js/lib/typed.js" type="text/javascript"></script>
-
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" >
 
 </head>
 
@@ -33,7 +32,7 @@ body {
 
   margin: 0;
   padding: 0;
-
+  background-color: #252627;
 }
  
 
@@ -71,14 +70,16 @@ nav ul {
     border-left-width: 1px;
     border-right-width: 1px;
     border-color: yellow;
-    width:25%;
+    width:38%;
+    background-image: url(img/use_your_illusion.png);
+    background-repeat: repeat;
 }
 
 
 nav a{
 
-	font-size:32px;
-	font-family: 'Montserrat', sans-serif;
+	font-size:67px;
+	font-family: 'Montfserrat', sans-serif;
 	text-align: center;
   padding:20px;
   color:white;
@@ -92,8 +93,9 @@ span#typed {
     top: 33%;
     width: auto;
     max-height: auto;
-    font-size: 48px;
-  font-family: 'Montserrat', sans-serif;
+    font-size: 67px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 
@@ -104,17 +106,7 @@ span#typed {
   background-color: #ddd;
 }
 
-.skills {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 40px;
-  color: white;
-}
 
-.html {width: 90%; background-color: #4CAF50;}
-.css {width: 80%; background-color: #2196F3;}
-.js {width: 65%; background-color: #f44336;}
-.php {width: 60%; background-color: #808080;}
 
 @media  (max-width: 640px){
 
@@ -126,16 +118,20 @@ span#typed {
 #side-nav-fixed-mobile {
     left: 0;
     position: fixed;
-    
     height:974px;
     top:0;
     margin:0;
     padding:0;
     background-color: #181818;
-    display: block;
+    display: none;
 
 }
 
+.section{
+
+margin-left: 0;
+
+}
 
 
 
@@ -147,225 +143,16 @@ a:active {
 }
 .active { 
     background-color: yellow;
+    color:black !important;
 }
+
+
+
 
 @import url(https://fonts.googleapis.com/css?family=Aldrich);
 
-body{background:#333;}
-.progressbar{
-    position:relative;
-    display:block;
-    width:560px;
-    height:20px;
-    padding:10px 20px;
-    border-bottom:1px solid rgba(255,255,255,0.25);
-    border-radius:16px;
-    margin:40px auto;
-    -webkit-box-shadow: 0px 4px 4px -4px rgba(255, 255, 255, 0.4),0px -3px 3px -3px rgba(255, 255, 255, 0.25),inset 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 4px 4px -4px rgba(255, 255, 255, 0.4),0px -3px 3px -3px rgba(255, 255, 255, 0.25),inset 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
-}
-.progressbar:before{
-    position:absolute;
-    display:block;
-    content:"";
-    width:558px;
-    height:18px;
-    top:10px;
-    left:20px;
-  -webkit-border-radius:20px;
-    border-radius:20px;
-    background:#222;
-  -webkit-box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.85);;
-    box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.85);
-  border:1px solid rgba(0,0,0,0.8);
-}
-.bar {
-  position:absolute;
-  display:block;
-  width:0px;
-  height:16px;
-  top:12px;
-  left:22px;
-  background: rgb(126,234,25);
-  background: -moz-linear-gradient(top,  rgba(126,234,25,1) 0%, rgba(83,173,0,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(126,234,25,1)), color-stop(100%,rgba(83,173,0,1)));
-  background: -webkit-linear-gradient(top,  rgba(126,234,25,1) 0%,rgba(83,173,0,1) 100%);
-  background: -o-linear-gradient(top,  rgba(126,234,25,1) 0%,rgba(83,173,0,1) 100%);
-  background: -ms-linear-gradient(top,  rgba(126,234,25,1) 0%,rgba(83,173,0,1) 100%);
-  background: linear-gradient(to bottom,  rgba(126,234,25,1) 0%,rgba(83,173,0,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7eea19', endColorstr='#53ad00',GradientType=0 );
-  -webkit-border-radius:16px;
-  border-radius:16px;
-  -webkit-box-shadow: 0px 0px 12px 0px rgba(126, 234, 25, 1),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.45),inset 1px 0px 0px 0px rgba(255, 255, 255, 0.25),inset -1px 0px 0px 0px rgba(255, 255, 255, 0.25);
-  box-shadow: 0px 0px 12px 0px rgba(126, 234, 25, 1),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.45),inset 1px 0px 0px 0px rgba(255, 255, 255, 0.25),inset -1px 0px 0px 0px rgba(255, 255, 255, 0.25);
-  overflow:hidden;
-}
-.bar.color2 {
-  background: rgb(229,195,25);
-  background: -moz-linear-gradient(top,  rgba(229,195,25,1) 0%, rgba(168,140,0,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(229,195,25,1)), color-stop(100%,rgba(168,140,0,1)));
-  background: -webkit-linear-gradient(top,  rgba(229,195,25,1) 0%,rgba(168,140,0,1) 100%);
-  background: -o-linear-gradient(top,  rgba(229,195,25,1) 0%,rgba(168,140,0,1) 100%);
-  background: -ms-linear-gradient(top,  rgba(229,195,25,1) 0%,rgba(168,140,0,1) 100%);
-  background: linear-gradient(to bottom,  rgba(229,195,25,1) 0%,rgba(168,140,0,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5c319', endColorstr='#a88c00',GradientType=0 );
-  -webkit-box-shadow: 0px 0px 12px 0px rgba(229, 195, 25, 1),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.45),inset 1px 0px 0px 0px rgba(255, 255, 255, 0.25),inset -1px 0px 0px 0px rgba(255, 255, 255, 0.25);
-  box-shadow: 0px 0px 12px 0px rgba(229, 195, 25, 1),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.45),inset 1px 0px 0px 0px rgba(255, 255, 255, 0.25),inset -1px 0px 0px 0px rgba(255, 255, 255, 0.25);
-}
-.bar.color3 {
-  background: rgb(232,25,87);
-  background: -moz-linear-gradient(top,  rgba(232,25,87,1) 0%, rgba(170,0,51,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,25,87,1)), color-stop(100%,rgba(170,0,51,1)));
-  background: -webkit-linear-gradient(top,  rgba(232,25,87,1) 0%,rgba(170,0,51,1) 100%);
-  background: -o-linear-gradient(top,  rgba(232,25,87,1) 0%,rgba(170,0,51,1) 100%);
-  background: -ms-linear-gradient(top,  rgba(232,25,87,1) 0%,rgba(170,0,51,1) 100%);
-  background: linear-gradient(to bottom,  rgba(232,25,87,1) 0%,rgba(170,0,51,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e81957', endColorstr='#aa0033',GradientType=0 );
-  -webkit-box-shadow: 0px 0px 12px 0px rgba(232, 25, 87, 1),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.45),inset 1px 0px 0px 0px rgba(255, 255, 255, 0.25),inset -1px 0px 0px 0px rgba(255, 255, 255, 0.25);
-  box-shadow: 0px 0px 12px 0px rgba(232, 25, 87, 1),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.45),inset 1px 0px 0px 0px rgba(255, 255, 255, 0.25),inset -1px 0px 0px 0px rgba(255, 255, 255, 0.25);
-}
-.bar.color4 {
-  background: rgb(24,109,226);
-  background: -moz-linear-gradient(top,  rgba(24,109,226,1) 0%, rgba(0,69,165,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(24,109,226,1)), color-stop(100%,rgba(0,69,165,1)));
-  background: -webkit-linear-gradient(top,  rgba(24,109,226,1) 0%,rgba(0,69,165,1) 100%);
-  background: -o-linear-gradient(top,  rgba(24,109,226,1) 0%,rgba(0,69,165,1) 100%);
-  background: -ms-linear-gradient(top,  rgba(24,109,226,1) 0%,rgba(0,69,165,1) 100%);
-  background: linear-gradient(to bottom,  rgba(24,109,226,1) 0%,rgba(0,69,165,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#186de2', endColorstr='#0045a5',GradientType=0 );
-  -webkit-box-shadow: 0px 0px 12px 0px rgba(24, 109, 226, 1),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.45),inset 1px 0px 0px 0px rgba(255, 255, 255, 0.25),inset -1px 0px 0px 0px rgba(255, 255, 255, 0.25);
-  box-shadow: 0px 0px 12px 0px rgba(24, 109, 226, 1),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.45),inset 1px 0px 0px 0px rgba(255, 255, 255, 0.25),inset -1px 0px 0px 0px rgba(255, 255, 255, 0.25);
-}
-.bar:before {
-  position:absolute;
-  display:block;
-  content:"";
-  width:606px;
-  height:150%;
-  top:-25%;
-  left:-25px;
-  background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.01) 50%, rgba(255,255,255,0) 51%, rgba(255,255,255,0) 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.35)), color-stop(50%,rgba(255,255,255,0.01)), color-stop(51%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0)));
-  background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.01) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%);
-  background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.01) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%);
-  background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.01) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%);
-  background: radial-gradient(ellipse at center,  rgba(255,255,255,0.35) 0%,rgba(255,255,255,0.01) 50%,rgba(255,255,255,0) 51%,rgba(255,255,255,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59ffffff', endColorstr='#00ffffff',GradientType=1 );
-}
-.bar:after {
-  position:absolute;
-  display:block;
-  content:"";
-  width:64px;
-  height:16px;
-  right:0;
-  top:0;
-  -webkit-border-radius: 0px 16px 16px 0px;
-  border-radius: 0px 16px 16px 0px;
-  background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 98%, rgba(255,255,255,0) 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(98%,rgba(255,255,255,0.6)), color-stop(100%,rgba(255,255,255,0)));
-  background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.6) 98%,rgba(255,255,255,0) 100%);
-  background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.6) 98%,rgba(255,255,255,0) 100%);
-  background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.6) 98%,rgba(255,255,255,0) 100%);
-  background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.6) 98%,rgba(255,255,255,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 );
-}
-.bar span {
-  position:absolute;
-  display:block;
-  width:100%;
-  height:64px;
-  -webkit-border-radius:16px;
-  border-radius:16px;
-  top:0;
-  left:0;
-  background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAABACAYAAAD7/UK9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjdFQ0M2MzdDQThBMTFFMUE3NzJFNzY4M0ZDMTA3MTIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjdFQ0M2MzhDQThBMTFFMUE3NzJFNzY4M0ZDMTA3MTIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyN0VDQzYzNUNBOEExMUUxQTc3MkU3NjgzRkMxMDcxMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyN0VDQzYzNkNBOEExMUUxQTc3MkU3NjgzRkMxMDcxMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PoTG0pMAABr+SURBVHjavJ1nj1zX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") 0 0;
-  -webkit-animation: sparkle 1500ms linear infinite;
-    -moz-animation: sparkle 1500ms linear infinite;
-    -o-animation: sparkle 1500ms linear infinite;
-    animation: sparkle 1500ms linear infinite;
-  opacity:0.2;
-}
-.label {
-  font-family: 'Aldrich', sans-serif;
-  position:absolute;
-  display:block;
-  width:40px;
-  height:30px;
-  line-height:30px;
-  top:38px;
-  left:0px;
-  background: rgb(76,76,76);
-  background: -moz-linear-gradient(top,  rgba(76,76,76,1) 0%, rgba(38,38,38,1) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(76,76,76,1)), color-stop(100%,rgba(38,38,38,1)));
-  background: -webkit-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(38,38,38,1) 100%);
-  background: -o-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(38,38,38,1) 100%);
-  background: -ms-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(38,38,38,1) 100%);
-  background: linear-gradient(to bottom,  rgba(76,76,76,1) 0%,rgba(38,38,38,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#262626',GradientType=0 );
-  font-weight:bold;
-  font-size:12px;
-  color:#fff;
-  text-align:center;
-  -webkit-border-radius:6px;
-  border-radius:6px;
-  border:1px solid rgba(0,0,0,0.2);
-  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
-  text-shadow: 0px -1px 0px #000000,0px 1px 1px #000000;
-    filter: dropshadow(color=#000000, offx=0, offy=-1);
-}
-.label span {
-  position:absolute;
-  display:block;
-  width:12px;
-  height:9px;
-  top:-9px;
-  left:14px;
-  background:transparent;
-  overflow:hidden;
-}
-.label span:before {
-  position:absolute;
-  display:block;
-  content:"";
-  width:8px;
-  height:8px;
-  top:4px;
-  left:2px;
-  border:1px solid rgba(0,0,0,0.5);
-  background: rgb(86,86,86);
-  background: -moz-linear-gradient(-45deg,  rgba(86,86,86,1) 0%, rgba(76,76,76,1) 50%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(86,86,86,1)), color-stop(50%,rgba(76,76,76,1)));
-  background: -webkit-linear-gradient(-45deg,  rgba(86,86,86,1) 0%,rgba(76,76,76,1) 50%);
-  background: -o-linear-gradient(-45deg,  rgba(86,86,86,1) 0%,rgba(76,76,76,1) 50%);
-  background: -ms-linear-gradient(-45deg,  rgba(86,86,86,1) 0%,rgba(76,76,76,1) 50%);
-  background: linear-gradient(135deg,  rgba(86,86,86,1) 0%,rgba(76,76,76,1) 50%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#565656', endColorstr='#4c4c4c',GradientType=1 );
-  -webkit-box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.15);
-  -moz-transform:rotate(45deg);
-  -webkit-transform:rotate(45deg);
-  -o-transform:rotate(45deg);
-  -ms-transform:rotate(45deg);
-  transform:rotate(45deg);
-}
-@-webkit-keyframes sparkle {
-  from {background-position: 0 0;}
-  to {background-position: 0 -64px;}
-}
-@-moz-keyframes sparkle {
-  from {background-position: 0 0;}
-  to {background-position: 0 -64px;}
-}
-@-o-keyframes sparkle {
-  from {background-position: 0 0;}
-  to {background-position: 0 -64px;}
-}
-@keyframes sparkle {
-  from {background-position: 0 0;}
-  to {background-position: 0 -64px;}
-}
+
+
 
 i {
   display: block;
@@ -435,6 +222,41 @@ i {
     transform: translateY(-15px);
   }
 }
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
 </style>
 
 <title>Andres's Website</title>
@@ -445,16 +267,16 @@ i {
 
 <ul class="">
  
-  <li><a id="s1" href="#sections"><span><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>Home</a></li>
-  <li><a id="s2" href="#2"><span><i class="fa fa-id-card-o" aria-hidden="true"></i></span>About</a></li>
+  <li><a id="s1" href="#sections"><span><i class="fa fa-user-circle-o" id="home-icon" aria-hidden="true"></i></span> Home</a></li>
+  <li><a id="s2" href="#2"><span><i id="about-icon" class="fa fa-id-card-o" aria-hidden="true"></i></span> About</a></li>
   
 
-  <li><a href=#><span><i class="fa fa-sliders" aria-hidden="true"></i></span>Skills</a></li>
-  <li><a href=#><span><i class="fa fa-briefcase" aria-hidden="true"></i></span>Experience</a></li>
-  <li><a href=#><span><i class="fa fa-university" aria-hidden="true"></i></span>Education</a></li>
-  <li><a href=#><span><i class="fa fa-folder-open" aria-hidden="true"></i></span>Portfolio</a></li>
-  <li><a href=#><span><i class="fa fa-volume-control-phone" aria-hidden="true"></i></span>Contact</a></li>
-  <li><a href="file:///C:/Users/Andres/Documents/GitHub/-andres-portfolio/Andres%20Gutierrez%20Resume%20June%20NJ.pdf"><span><i class="fa fa-floppy-o" aria-hidden="true"></i></span>My Resume.pdf</a></li>
+  <li><a id="s3" href="#skills-3"><span><i id="skills-icon" class="fa fa-sliders" aria-hidden="true"></i></span> Skills</a></li>
+  <li><a id="s4" href=#4><span><i class="fa fa-briefcase" id="experience-icon" aria-hidden="true"></i></span> Experience</a></li>
+  <li><a id="s5" href=#5><span><i class="fa fa-university" id="education-icon" aria-hidden="true"></i></span> Education</a></li>
+  <li><a id="s6" href=#6><span><i class="fa fa-folder-open" id="portfolio-icon" aria-hidden="true"></i></span> Portfolio</a></li>
+  <li><a id="s7" href=#7><span><i class="fa fa-volume-control-phone" id="contact-icon" aria-hidden="true"></i></span> Contact</a></li>
+  <li><a href="https://andresgutierrez.me/Andres Gutierrez Resume Feb NJ.pdf`"><span><i class="fa fa-floppy-o" aria-hidden="true"></i></span> My Resume.pdf</a></li>
 
 </ul>
 </nav>
@@ -474,9 +296,9 @@ i {
 </nav>
 
 
-<div id="sections" style="margin-left: 25%;height: 100vh;" >
-<div id ="particles-js" style="background-color: #252627; color:white; ">
-<div id="typed-strings" style="color:white;">
+<div class="section home" id="sections" >
+<div id ="particles-js">
+<div id="typed-strings">
     <p>Hello, my name is <strong>Andres</strong>.</p>
     <p> I make Websites,</p>
     <p> know Accounting,</p>
@@ -494,79 +316,185 @@ i {
   
 </script>
 
-<div class="arrow bounce"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></div>
-</div>
+<div class="arrow bounce">
 
-</div>
-</div>
-
-
-
-<div id="2" style="background-color:grey;margin-left: 25%;">
-
-
-
-
-<div style="padding-top: 80px;
-    padding-bottom: 100px;margin-left:10%;margin-right: 10%">
-
-<h2 style="font-size:56px; color:yellow;" >Andres Gutierrez</h2>
-<p style="font-size:24px;color:white;">Welcome, I am a Web Developer with plenty of additional,valueable skills that I bring to the table. I have experience in Accounting,Sales,SEO, and Graphics.I can speak 3 Languages: English,Spanish, and Japanese. I ready to use all my experience and skills to solve what ever problems you throw at me.</p>
-<hr>
-<p style="font-size:14px; line-height: 24px;color:white;"><a href="mailto:andres9888@gmail.com?Subject=Hello%20,%20Andres%20we%20are%20interested%20in%20Talking%20to%20you" target="_top">Email:Andres9888@gmail.com</a></p>
-<p style="font-size:14px; line-height: 24px;color:white;">Address: 121 King Street, Melbourne Victoria, 1200 USA</p>
-
+<a href="#2">
+  <i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></div>
+</a>
 
 </div>
 
 </div>
+</div>
 
-<div id="3" style="background-color:#252627;margin-left: 25%;">
-<div style="font-size: 56px;
-    color: white;    padding-top: 80px;
-    padding-bottom: 100px;
-    margin-left: 10%;
-    margin-right: 10%;">
-  <h1>My Skills</h1>
-  <div style="float:left">
 
-<h3 style="font-size: 18px">HTML & CSS</h3>
-<div class="progressbar" data-perc="100">
+
+<div class="section about" id="2">
+<div class="wrapper">
+
+<h2 class="about__headline">About-me:</h2>
+<p class="about__content">
+Hello, I am Andres Gutierrez a Web Developer with plenty of additional,valueable skills that I bring to the table. I have experience in Accounting,Sales,(SEO):Search Engine Optimization, and Graphics.I  can also speak 3 Languages: English,Spanish, and Japanese. I am ready to use all my experience and skills to solve what ever problems you throw at me.
+Lets Talk.
+</p>
+</div>
+
+</div>
+
+<div class="section skills" id="skills-3">
+<div class="wrapper">
+
+  <h1 class="skills__headline">My Skills</h1>
+<div class="skills__container">
+
+<h3>HTML &amp; CSS</h3>
+<div class="skills__progressbar" data-perc="100">
   <div class="bar"><span></span></div>
   <div class="label"><span></span></div>
 </div>
-<h3 style="font-size: 18px">WordPress</h3>
-<div class="progressbar" data-perc="75">
+  <h3>WordPress</h3>
+<div class="skills__progressbar" data-perc="75">
   <div class="bar color2"><span></span></div>
   <div class="label"><span></span></div>
 </div>
-<h3 style="font-size: 18px">PHP & SQL</h3>
-<div class="progressbar" data-perc="50">
+  <h3>PHP &amp; SQL</h3>
+<div class="skills__progressbar" data-perc="50">
   <div class="bar color3"><span></span></div>
   <div class="label"><span></span></div>
 </div>
-<h3 style="font-size: 18px">PhotoShop</h3>
-<div class="progressbar" data-perc="25">
+<h3>PhotoShop</h3>
+<div class="skills__progressbar" data-perc="25">
   <div class="bar color4"><span></span></div>
   <div class="label"><span></span></div>
 
+</div>
+
+</div>
+
+<div>
+
+<h1 class="skills-language__headline">Language Skills</h1>
+
+<div class="cirlce-progressbar-container">
+  
+<div class="skills-language__skills-text" id="circle1">
+  English
+</div>
+<div class="skills-language__skills-text" id="circle2">
+  Spanish
+</div>
+<div class="skills-language__skills-text" id="circle3">
+Japanese</div>
+
+</div>
+
+
+<script src="node_modules\progressbar.js\dist\progressbar.min.js"></script>
+<script type="text/javascript">// progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+
+   </script>
+</div>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+<div class="section work-experience" id="4">
+<div class="wrapper">
+<div>
+<div>
+  <h2 class="work-experience__headline">My Experience</h1>
+<div class="work-experience__content">
+  <h3 class="work-experience__subheadline">3+ Years Work Experience</h4>
+  <p class="work-experience__content-info">I have a wide range of experiences from Developing full websites from scratch to handling SEO,Marketing, and Graphic Design for Companies</p>
+</div>
+</div>
+
+
+<div>
+
+
+<div class="work-experience__work-img">
+<img src="img/cropped-Northarlingtonusedcarlotnj-logo-192x192.jpg">
+</div>
+
+<h2 class="work-experience__company">NorthArlingtonUsedCarLotNJ</h2>    
+<h3 class="work-experience__work-title">WebDeveloper/SEO/Marketing/Sales/Photographer</h3>
+<h5 class="work-experience__date">June 2017 - (Present)</h5>
+<p class="work-experience__description">Worked Ranged from Creating the Website to Photography and Video for Car Inventory to Sales and Marketing </p>
+<ul>
+  <li>Made Website</li>
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+<hr>
+</div>
+</div>
+
+<div class="section education" id="5">
+
+
+
+
+<div class="wrapper">
+
+<div class="education__headline">
+<h2>Education</h2>
+<div>
+<img src="img/WP-Logo.png">
+</div>
+
+<div>
+  
+<h3 class="education__school-text">William Paterson University</h3>
+<h4 class="education__major-text">Accounting Bachelors of Science and       Japanese Bachelors of Arts</h4>
+<h5 class="education__date-text">Sept 2006-Dec 2013</h5>
+
+
+</div>
+
+<div>
+  
+<hr>
+
+
+</div>
+
+<div>
+  
+<hr>
+
+
+</div>
+
+
+
 
 </div>
 
 
 </div>
 
-<h1 style="clear: left">Language Skills</h1>
-
 </div>
 
-
-
-</div>
-
-</div>
-
-<div id="4" style="background-color:green;margin-left: 25%;">
+<div class="section portfolio" id="6">
 
 
 
@@ -574,17 +502,43 @@ i {
 <div style="padding-top: 80px;
     padding-bottom: 100px;">
 
-<h2>Andres Gutierrez</h2>
-<h3>Web Developer with Accounting, Sales, and Language Skills</h3>
-<p>next section</p>
-<p>next section</p>
+<div class="wrapper">
+
+  
+  <h2 class="portfolio__headline">Portfolio</h2>
+  
+
+
+<div>
+  
+  <img class="portfolio__image" src="img/mockup-images/mockup-images/mockup-1 (Custom).png">
+  
+<h3 class="portfolio__work-name">YourFirstMudRun</h3>
+<p class="portfolio__work-description">fdfsfds</p>
+
+  <ul>
+    <li class="portfolio__skill-used">Wordpress</li>
+    <li class="portfolio__skill-used">Wordpress Theme Development</li>
+    <li class="portfolio__skill-used">SEO</li>
+    
+
+  </ul>
+
+</div>
+
+
+
+</div>
+
+
+
 
 
 </div>
 
 </div>
 
-<div id="5" style="background-color:white;margin-left: 25%;">
+<div class="section" id="7" style="background-color:grey;position: relative;">
 
 
 
@@ -592,141 +546,286 @@ i {
 <div style="padding-top: 80px;
     padding-bottom: 100px;">
 
-<h2>Andres Gutierrez</h2>
-<h3>Web Developer with Accounting, Sales, and Language Skills</h3>
-<p>next section</p>
-<p>next section</p>
+<div style="font-size: 56px;
+    color: black;    padding-top: 80px;
+    padding-bottom: 100px;
+    ">
+  <h1>Contact Me</h1>
 
-
-</div>
-
-</div>
-
-<div id="6" style="background-color:blue;margin-left: 25%;">
-
-
-
-
-<div style="padding-top: 80px;
-    padding-bottom: 100px;">
-
-<h2>Andres Gutierrez</h2>
-<h3>Web Developer with Accounting, Sales, and Language Skills</h3>
-<p>next section</p>
-<p>next section</p>
-
-
-</div>
-
-</div>
-
-<div id="7" style="background-color:pink;margin-left: 25%;">
-
-
-
-
-<div style="padding-top: 80px;
-    padding-bottom: 100px;">
-
-<h2>Andres Gutierrez</h2>
-<h3>Web Developer with Accounting, Sales, and Language Skills</h3>
-<p>next section</p>
-<p>next section</p>
-
-
-</div>
-
-</div>
-
-<div id="8" style="background-color:yellow;margin-left: 25%;">
-
-
-
-
-<div style="padding-top: 80px;
-    padding-bottom: 100px;">
-
-<h2>Andres Gutierrez</h2>
-<h3>Web Developer with Accounting, Sales, and Language Skills</h3>
-<p>next section</p>
-<p>next section</p>
-
-
-</div>
-
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="node_modules/waypoints/lib/jquery.waypoints.js"></script>
-
-
-<script>
-
-
-$(document).ready(function(){
-$(window).scroll(function(){
-    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250); 
-  //250 is fade pixels
-  });
-   // jQuery methods go here...
-$('#s1').addClass("active");
-
-
-$('#2').waypoint(function() {
-
-  $("#s1").removeClass("active");
+<script src="https://maps.googleapis.com/maps/api/js?key=&extension=.js"></script> 
+<script src="https://cdn.mapkit.io/v1/infobox.js"></script> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"> 
+<link href="https://cdn.mapkit.io/v1/infobox.css" rel="stylesheet" > 
  
-$("#s2").addClass("active");
-  
-  
-},{ offset: 101 });
+<script> 
+    google.maps.event.addDomListener(window, 'load', init);
+    var map, markersArray = [];
 
-$('#1').waypoint(function() {
-  $("nav ul li").children().removeClass("active");
-  $("#s1").addClass("active");
-}, { offset: 0 });
+    function bindInfoWindow(marker, map, location) {
+        google.maps.event.addListener(marker, 'click', function() {
+            function close(location) {
+                location.ib.close();
+                location.infoWindowVisible = false;
+                location.ib = null;
+            }
 
+            if (location.infoWindowVisible === true) {
+                close(location);
+            } else {
+                markersArray.forEach(function(loc, index){
+                    if (loc.ib && loc.ib !== null) {
+                        close(loc);
+                    }
+                });
 
-});
-  
-$(function() {
-    
-  $('.progressbar').each(function(){
-    var t = $(this);
-    var dataperc = t.attr('data-perc'),
-        barperc = Math.round(dataperc*5.56);
-    t.find('.bar').animate({width:barperc}, dataperc*25);
-    t.find('.label').append('<div class="perc"></div>');
-    
-    function perc() {
-      var length = t.find('.bar').css('width'),
-        perc = Math.round(parseInt(length)/5.56),
-        labelpos = (parseInt(length)-2);
-      t.find('.label').css('left', labelpos);
-      t.find('.perc').text(perc+'%');
+                var boxText = document.createElement('div');
+                boxText.style.cssText = 'background: #fff;';
+                boxText.classList.add('md-whiteframe-2dp');
+
+                function buildPieces(location, el, part, icon) {
+                    if (location[part] === '') {
+                        return '';
+                    } else if (location.iw[part]) {
+                        switch(el){
+                            case 'photo':
+                                if (location.photo){
+                                    return '<div class="iw-photo" style="background-image: url(' + location.photo + ');"></div>';
+                                 } else {
+                                    return '';
+                                }
+                                break;
+                            case 'iw-toolbar':
+                                return '<div class="iw-toolbar"><h3 class="md-subhead">' + location.title + '</h3></div>';
+                                break;
+                            case 'div':
+                                switch(part){
+                                    case 'email':
+                                        return '<div class="iw-details"><i class="material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span><a href="mailto:' + location.email + '" target="_blank">' + location.email + '</a></span></div>';
+                                        break;
+                                    case 'web':
+                                        return '<div class="iw-details"><i class="material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span><a href="' + location.web + '" target="_blank">' + location.web_formatted + '</a></span></div>';
+                                        break;
+                                    case 'desc':
+                                        return '<label class="iw-desc" for="cb_details"><input type="checkbox" id="cb_details"/><h3 class="iw-x-details">Details</h3><i class="material-icons toggle-open-details"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><p class="iw-x-details">' + location.desc + '</p></label>';
+                                        break;
+                                    default:
+                                        return '<div class="iw-details"><i class="material-icons"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span>' + location[part] + '</span></div>';
+                                    break;
+                                }
+                                break;
+                            case 'open_hours':
+                                var items = '';
+                                if (location.open_hours.length > 0){
+                                    for (var i = 0; i < location.open_hours.length; ++i) {
+                                        if (i !== 0){
+                                            items += '<li><strong>' + location.open_hours[i].day + '</strong><strong>' + location.open_hours[i].hours +'</strong></li>';
+                                        }
+                                        var first = '<li><label for="cb_hours"><input type="checkbox" id="cb_hours"/><strong>' + location.open_hours[0].day + '</strong><strong>' + location.open_hours[0].hours +'</strong><i class="material-icons toggle-open-hours"><img src="//cdn.mapkit.io/v1/icons/keyboard_arrow_down.svg"/></i><ul>' + items + '</ul></label></li>';
+                                    }
+                                    return '<div class="iw-list"><i class="material-icons first-material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><ul>' + first + '</ul></div>';
+                                 } else {
+                                    return '';
+                                }
+                                break;
+                         }
+                    } else {
+                        return '';
+                    }
+                }
+
+                boxText.innerHTML = 
+                    buildPieces(location, 'photo', 'photo', '') +
+                    buildPieces(location, 'iw-toolbar', 'title', '') +
+                    buildPieces(location, 'div', 'address', 'location_on') +
+                    buildPieces(location, 'div', 'web', 'public') +
+                    buildPieces(location, 'div', 'email', 'email') +
+                    buildPieces(location, 'div', 'tel', 'phone') +
+                    buildPieces(location, 'div', 'int_tel', 'phone') +
+                    buildPieces(location, 'open_hours', 'open_hours', 'access_time') +
+                    buildPieces(location, 'div', 'desc', 'keyboard_arrow_down');
+
+                var myOptions = {
+                    alignBottom: true,
+                    content: boxText,
+                    disableAutoPan: true,
+                    maxWidth: 0,
+                    pixelOffset: new google.maps.Size(-140, -40),
+                    zIndex: null,
+                    boxStyle: {
+                        opacity: 1,
+                        width: '280px'
+                    },
+                    closeBoxMargin: '0px 0px 0px 0px',
+                    infoBoxClearance: new google.maps.Size(1, 1),
+                    isHidden: false,
+                    pane: 'floatPane',
+                    enableEventPropagation: false
+                };
+
+                location.ib = new InfoBox(myOptions);
+                location.ib.open(map, marker);
+                location.infoWindowVisible = true;
+            }
+        });
     }
-    perc();
-    setInterval(perc, 0); 
-  });
-});
 
-  
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(40.78250672257301,-74.20569067469523),
+            zoom: 10,
+            gestureHandling: 'auto',
+            fullscreenControl: false,
+            zoomControl: true,
+            disableDoubleClickZoom: true,
+            mapTypeControl: false,
+            scaleControl: false,
+            scrollwheel: false,
+            streetViewControl: false,
+            draggable : false,
+            clickableIcons: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            styles: [{"stylers":[{"saturation":100},{"hue":"#fff700"}]},{"featureType":"landscape","stylers":[{"color":"#ffdd00"}]},{"featureType":"water","stylers":[{"color":"#718098"},{"saturation":-35},{"lightness":20}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels.text","stylers":[{"color":"#ffdd00"},{"lightness":-38}]},{"featureType":"administrative","elementType":"labels.text.stroke","stylers":[{"color":"#ffdd00"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","stylers":[{"weight":0.7}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]}]
+        }
+        var mapElement = document.getElementById('mapkit-9872');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
+            {"title":"Lyndhurst","address":"Lyndhurst, NJ, USA","desc":"","tel":"","int_tel":"","email":"","web":"","web_formatted":"","open":"","time":"","lat":40.81201710000001,"lng":-74.1243063,"vicinity":"Lyndhurst","open_hours":"","marker":{"url":"https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi_hdpi.png","scaledSize":{"width":25,"height":42,"f":"px","b":"px"},"origin":{"x":0,"y":0},"anchor":{"x":12,"y":42}},"iw":{"address":true,"desc":true,"email":true,"enable":true,"int_tel":true,"open":true,"open_hours":true,"photo":true,"tel":true,"title":true,"web":true}}
+        ];
+        for (i = 0; i < locations.length; i++) {
+            marker = new google.maps.Marker({
+                icon: locations[i].marker,
+                position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+                map: map,
+                title: locations[i].title,
+                address: locations[i].address,
+                desc: locations[i].desc,
+                tel: locations[i].tel,
+                int_tel: locations[i].int_tel,
+                vicinity: locations[i].vicinity,
+                open: locations[i].open,
+                open_hours: locations[i].open_hours,
+                photo: locations[i].photo,
+                time: locations[i].time,
+                email: locations[i].email,
+                web: locations[i].web,
+                iw: locations[i].iw
+            });
+            markersArray.push(marker);
+
+            if (locations[i].iw.enable === true){
+                bindInfoWindow(marker, map, locations[i]);
+            }
+        }
+    }
 </script>
+<style>
+    #mapkit-9872 {
+        height:400px;
+        width:100%;
+    }
+</style>
 
-<script src="node_modules/particles.js/particles.js"></script> 
-<script src="app.js"></script>
-
-
-
-
-
-
-
-
-
- 
+<div id='mapkit-9872'>
   
+</div>
+<div>
+<img alt="profile" src="img/IMG_20131103_150111302_HDR.jpg" style="max-width: 130px;border-radius: 50%;border: 2px solid white;z-index: 10;width: 100px;
+    height: 100px;
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    margin:auto;">
+</div>
+<div class="container">
+
+
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
   
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+
+<div>
+  <hr>
+<address class="about__address">
+<p><a href="mailto:andres9888@gmail.com?Subject=Hello%20,%20Andres%20we%20are%20interested%20in%20Talking%20to%20you" target="_top">
+<span>Email:</span>Andres9888@gmail.com</a></p>
+
+</address>
+<hr>
+
+
+</div>
+
+<div>
+  
+<hr>
+
+
+</div>
+
+<div>
+  
+<hr>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+</div>
+
+<div class="section" id="8" style="background-color:yellow;">
+
+
+
+
+<div style="padding-top: 80px;
+    padding-bottom: 100px;">
+
+<h2>Andres Gutierrez</h2>
+<h3>Web Developer with Accounting, Sales, and Language Skills</h3>
+<p>next section</p>
+<p>next section</p>
+
+
+</div>
+
+</div>
+
+
+<script src="node_modules/waypoints/lib/jquery.waypoints.js"></script>
+<script src="node_modules/particles.js/particles.js"></script>
+<script src="app.js"></script> 
+<script src="js/circlebars.js"></script>
+<script src="js/Waypoints.js"></script>
+
+
+<script src="js/smoothscrolling.js"></script>
+
+
+
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 .section{
 
-	margin-left: 25%;
+	margin-left: 38%;
 
  }
 
@@ -14,14 +14,14 @@
 
   		&__headline{
 
-  			font-size:56px; 
+  			font-size:67px; 
   			color:yellow;
   		}
 
   		&__content{
 	
     	margin-top:10px;
-		font-size:24px;
+		font-size:26px;
 		line-height:2;
 		color:white;
 
@@ -45,3 +45,6 @@
 
  @import "skills";
  @import "skills-language";
+@import "work-experience";
+@import "education";
+@import "_portfolio";

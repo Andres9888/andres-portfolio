@@ -1,5 +1,5 @@
 .section {
-  margin-left: 25%; }
+  margin-left: 38%; }
 
 .home {
   height: 100vh; }
@@ -7,11 +7,11 @@
 .about {
   background-color: grey; }
   .about__headline {
-    font-size: 56px;
+    font-size: 67px;
     color: yellow; }
   .about__content {
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 2;
     color: white; }
   .about__address {
@@ -29,11 +29,11 @@
   background-color: #252627;
   color: white; }
   .skills__headline {
-    font-size: 56px; }
+    font-size: 67px; }
   .skills__container {
     width: 100%;
     float: left;
-    font-size: 18px; }
+    font-size: 26px; }
   .skills__progressbar {
     position: relative;
     display: block;
@@ -255,6 +255,14 @@
   to {
     background-position: 0 -64px; } }
 
+.skills-language__headline {
+  font-size: 67px;
+  clear: left; }
+
+.skills-language__skills-text {
+  font-size: 26px;
+  font-weight: bold; }
+
 .cirlce-progressbar-container {
   vertical-align: middle;
   min-height: 40vh;
@@ -269,3 +277,78 @@
   width: 200px;
   height: 200px;
   position: relative; }
+
+.work-experience {
+  background-color: grey; }
+  .work-experience__headline {
+    padding-bottom: 60px;
+    font-size: 67px;
+    color: white; }
+  .work-experience__content {
+    margin-bottom: 50px; }
+  .work-experience__subheadline {
+    margin-top: 10px;
+    margin-bottom: 10;
+    font-size: 26px;
+    color: white; }
+  .work-experience__content-info {
+    font-size: 16px;
+    font-weight: bold;
+    color: white; }
+  .work-experience__work-img {
+    float: left;
+    margin-right: 20px; }
+  .work-experience__company {
+    color: #ffffff40;
+    font-size: 42px; }
+  .work-experience__work-title {
+    margin-bottom: 0;
+    line-height: 28px;
+    margin-top: 15px;
+    font-size: 26px;
+    color: white; }
+  .work-experience__date {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white; }
+  .work-experience__description {
+    font-size: 16px;
+    font-weight: normal;
+    color: white; }
+
+.education {
+  background-color: white; }
+  .education__headline {
+    padding-bottom: 60px;
+    font-size: 67px;
+    color: black; }
+  .education__school-text {
+    color: orange;
+    font-size: 42px; }
+  .education__major-text {
+    font-size: 26px; }
+  .education__date-text {
+    font-size: 16px;
+    font-weight: bold; }
+
+.portfolio {
+  background-color: lightgrey; }
+  .portfolio__headline {
+    font-size: 67px; }
+  .portfolio__image {
+    float: left; }
+  .portfolio__work-name {
+    font-size: 26px; }
+  .portfolio__work-description {
+    font-size: 16px; }
+  .portfolio__skill-used {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    line-height: 32px;
+    display: inline;
+    border-radius: 4px;
+    font-size: 12px;
+    background: #f04;
+    padding: 4px 9px; }
