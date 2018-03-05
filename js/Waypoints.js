@@ -64,6 +64,24 @@ $(function() {
     setInterval(perc, 0); 
   });
 
+  
+});
+
+   this.destroy()
+ 
+},
+{ offset: 120 });
+
+
+var skillsTrigger2 =
+$('#language-skills-3').waypoint(function() {
+
+$(function() {
+    
+  
+    
+  
+
 bar1.animate(1);
 bar2.animate(0.90);
 bar3.animate(0.60);  

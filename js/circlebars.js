@@ -36,7 +36,7 @@ var bar1 = new ProgressBar.Circle(circle1, {
 bar1.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
 bar1.text.style.fontSize = '2.5rem';
 bar1.text.style.marginTop = '-0.3rem';
-bar1.animate(0.99);
+bar1.animate(0);
    
    
    var bar2 = new ProgressBar.Circle(circle2, {
@@ -73,7 +73,7 @@ bar1.animate(0.99);
 bar2.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
 bar2.text.style.fontSize = '2.5rem';
 bar2.text.style.marginTop = '-0.3rem';
-   bar2.animate(0.90);
+   bar2.animate(0);
    
    
    
@@ -111,7 +111,7 @@ bar2.text.style.marginTop = '-0.3rem';
 bar3.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
 bar3.text.style.fontSize = '2.5rem';
 bar3.text.style.marginTop = '-0.3rem';
-   bar3.animate(0.82);
+   bar3.animate(0);
    
    
   
