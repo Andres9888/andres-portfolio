@@ -1,0 +1,89 @@
+.work-experience {
+  background-color: grey;
+  
+  @media(max-width:600px) {
+    &__text {
+      overflow: none;
+    }
+  }
+  @media(min-width:601px){
+  &__text {
+    overflow: hidden;
+  }
+
+  }
+
+  &__headline {
+    padding-bottom: 60px;
+
+    font-size: 67px;
+    color: white;
+  }
+
+  &__content {
+    margin-bottom: 50px;
+  }
+
+  &__subheadline {
+    margin-top: 10px;
+    margin-bottom: 10;
+
+    font-size: 26px;
+    color: white;
+  }
+
+  &__content-info {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+  }
+
+  &__work-img {
+    float: left;
+    margin-right: 20px;
+    height: 5rem;
+    width: 27rem;
+  }
+
+  &__company {
+    color: #ffffff40;
+    font-size: 42px;
+  }
+
+  &__work-title {
+    margin-bottom: 0;
+    line-height: 28px;
+    font-size: 26px;
+    color: white;
+  }
+
+  &__date {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  &__description {
+    font-size: 2.4rem;
+    line-height: 1.7;
+    font-weight: normal;
+    color: white;
+  }
+
+  &__list {
+    color: white;
+    font-size: 2.4rem;
+    line-height: 1.7;
+    
+  }
+  &__list--style{
+
+    list-style:inside;
+  }
+  &__spacer--space {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}

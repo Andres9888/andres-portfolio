@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/particles.js/demo/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="node_modules/typed.js/lib/typed.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet">
+
+    <!-- Start of Async Drift Code -->
+    <script>
+        "use strict";
+
+        !function () {
+            var t = window.driftt = window.drift = window.driftt || [];
+            if (!t.init) {
+                if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                    t.factory = function (e) {
+                        return function () {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function (e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function (t) {
+                        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+            }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('3bmui8ya5s9k');
+    </script>
+    <!-- End of Async Drift Code -->
+
+
+
+
+</head>
+<style>
+    html,
+    body {
+
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+        background-color: #252627;
+    }
+
+
+    a {
+
+        font-size: 1.6 rem;
+        display: block;
+        padding: 8px;
+        background-color: ;
+
+    }
+
+
+    #side-nav-fixed-mobile {
+
+        display: none;
+
+
+    }
+
+    #side-nav-fixed-desktop {}
+
+    nav ul {
+        left: 0;
+        position: fixed;
+        height: 100%;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        background-color: #181818;
+        border-style: dashed;
+        border-width: 1px;
+        border-left-width: 1px;
+        border-right-width: 1px;
+        border-color: yellow;
+        width: 38%;
+        background-image: url(img/use_your_illusion.png);
+        background-repeat: repeat;
+    }
+
+
+    nav a {
+
+        font-size: 67px;
+        font-family: 'Montfserrat', sans-serif;
+        text-align: center;
+        padding: 20px;
+        color: white;
+
+    }
+
+
+    span#typed {
+        position: relative;
+        left: 5%;
+        top: 33%;
+        width: auto;
+        max-height: auto;
+        font-size: 67px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+
+
+    * {
+        box-sizing: border-box
+    }
+
+    .container {
+        width: 100%;
+        background-color: #ddd;
+    }
+
+
+
+    @media (max-width: 640px) {
+
+        #side-nav-fixed-desktop {
+
+            display: none;
+        }
+
+        #side-nav-fixed-mobile {
+            left: 0;
+            position: fixed;
+            height: 974px;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            background-color: #181818;
+            display: none;
+
+        }
+
+        .section {
+
+            margin-left: 0;
+
+        }
+
+
+
+    }
+
+
+    a:active {
+        background-color: yellow;
+    }
+
+    .active {
+        background-color: yellow;
+        color: black !important;
+    }
+
+
+
+
+    @import url(https://fonts.googleapis.com/css?family=Aldrich);
+
+
+
+
+    i {
+        display: block;
+        color: #fff;
+    }
+
+    .arrow {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -20px;
+        width: 40px;
+        height: 60px;
+        /*change with size of arrow to make sit on bottom */
+        /*   background-image: url(); */
+        /*   background-size: contain; */
+    }
+
+    .bounce {
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+    }
+
+    @-moz-keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            -moz-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        40% {
+            -moz-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+
+        60% {
+            -moz-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    }
+
+    @-webkit-keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        40% {
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+
+        60% {
+            -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    }
+
+    @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        40% {
+            -moz-transform: translateY(-30px);
+            -ms-transform: translateY(-30px);
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+
+        60% {
+            -moz-transform: translateY(-15px);
+            -ms-transform: translateY(-15px);
+            -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    }
+
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        /* Full width */
+        padding: 12px;
+        /* Some padding */
+        border: 1px solid #ccc;
+        /* Gray border */
+        border-radius: 4px;
+        /* Rounded borders */
+        box-sizing: border-box;
+        /* Make sure that padding and width stays in place */
+        margin-top: 6px;
+        /* Add a top margin */
+        margin-bottom: 16px;
+        /* Bottom margin */
+        resize: vertical
+            /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    /* Add a background color and some padding around the form */
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+</style>
+<title>Andres's Website</title>
+
+<body>
+    <nav id="side-nav-fixed-desktop">
+        <ul class="">
+            <li><a id="s1" href="#sections"><span><i class="fa fa-user-circle-o" id="home-icon"
+                            aria-hidden="true"></i></span> Home</a></li>
+            <li><a id="s2" href="#2"><span><i id="about-icon" class="fa fa-id-card-o" aria-hidden="true"></i></span>
+                    About</a></li>
+            <li><a id="s3" href="#skills-3"><span><i id="skills-icon" class="fa fa-sliders"
+                            aria-hidden="true"></i></span> Skills</a></li>
+            <li><a id="s4" href=#4><span><i class="fa fa-briefcase" id="experience-icon" aria-hidden="true"></i></span>
+                    Experience</a></li>
+            <li><a id="s5" href=#5><span><i class="fa fa-university" id="education-icon" aria-hidden="true"></i></span>
+                    Education</a></li>
+            <li><a id="s6" href=#6><span><i class="fa fa-folder-open" id="portfolio-icon" aria-hidden="true"></i></span>
+                    Portfolio</a></li>
+            <li><a id="s7" href=#7><span><i class="fa fa-volume-control-phone" id="contact-icon"
+                            aria-hidden="true"></i></span> Contact</a></li>
+            <li><a href="https://andresgutierrez.me/Andres Gutierrez Resume Feb NJ.pdf`"><span><i class="fa fa-floppy-o"
+                            aria-hidden="true"></i></span> My Resume.pdf</a></li>
+        </ul>
+    </nav>
+    <nav id="side-nav-fixed-mobile">
+        <ul>
+            <li><a href=#><span><i class="fa fa-user-circle-o" aria-hidden="true"></i></span></a></li>
+            <li><a href=#><span><i class="fa fa-id-card-o" aria-hidden="true"></i></span></a></li>
+            <li><a href=#><span><i class="fa fa-sliders" aria-hidden="true"></i></span></a></li>
+            <li><a href=#><span><i class="fa fa-briefcase" aria-hidden="true"></i></span></a></li>
+            <li><a href=#><span><i class="fa fa-university" aria-hidden="true"></i></span></a></li>
+            <li><a href=#><span><i class="fa fa-folder-open" aria-hidden="true"></i></span></a></li>
+            <li><a href=#><span><i class="fa fa-volume-control-phone" aria-hidden="true"></i></span></a></li>
+            <li><a href=#><span><i class="fa fa-floppy-o" aria-hidden="true"></i></span></a></li>
+        </ul>
+    </nav>
+    <div class="section home" id="sections">
+        <div id="particles-js">
+            <div id="typed-strings">
+                <p>Hello, my name is <strong>Andres</strong>.</p>
+                <p> I make Websites,</p>
+                <p> know Accounting,</p>
+                <p> And Speak a Few Languages </p>
+                <p> Scroll down to learn more about me! </p>
+            </div>
+            <span id="typed"></span>
+            <script>
+                var typed = new Typed('#typed', {
+                    stringsElement: '#typed-strings'
+                });
+            </script>
+            <div class="arrow bounce">
+                <a href="#2">
+                    <i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></div>
+            </a>
+        </div>
+    </div>
+    </div>
+    <div class="section about" id="2">
+        <div class="wrapper">
+            <h2 class="about__headline">About-me:</h2>
+            <p class="about__content">
+                Hello, I am Andres Gutierrez a Web Developer with 5+ years of experience. I have worked on projects
+                thats range from creating Wordpress Websites to React Applications.
+                I also have experience in Search Engine Optimization, and Graphic Design. I am ready to use all my
+                experience and skills to
+                solve what ever problems you throw at me.
+                Lets Talk.
+            </p>
+        </div>
+    </div>
+    <div class="section skills" id="skills-3">
+        <div class="wrapper">
+            <h1 class="skills__headline">My Skills</h1>
+            <div class="skills__container">
+                <h3>HTML &amp; CSS & Javascript</h3>
+                <div class="skills__progressbar" data-perc="100">
+                    <div class="bar"><span></span></div>
+                    <div class="label"><span></span></div>
+                </div>
+                <h3>React</h3>
+                <div class="skills__progressbar" data-perc="75">
+                    <div class="bar color3"><span></span></div>
+                    <div class="label"><span></span></div>
+                </div>
+                <h3>WordPress</h3>
+                <div class="skills__progressbar" data-perc="75">
+                    <div class="bar color4"><span></span></div>
+                    <div class="label"><span></span></div>
+                </div>
+                <h3>PHP &amp; SQL</h3>
+                <div class="skills__progressbar" data-perc="50">
+                    <div class="bar color2"><span></span></div>
+                    <div class="label"><span></span></div>
+                </div>
+
+            </div>
+            <div>
+                <div id="language-skills-3">
+                    <h1 class="skills-language__headline">Language Skills</h1>
+                    <div class="cirlce-progressbar-container">
+                        <div class="skills-language__skills-text" id="circle1">
+                            English
+                        </div>
+                        <div class="skills-language__skills-text" id="circle2">
+                            Spanish
+                        </div>
+                        <div class="skills-language__skills-text" id="circle3">
+                            Japanese</div>
+                    </div>
+                </div>
+                <script src="node_modules\progressbar.js\dist\progressbar.min.js"></script>
+                <script type="text/javascript">
+                // progressbar.js@1.0.0 version is used
+                // Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+                </script>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="section work-experience" id="4">
+        <div class="wrapper">
+            <div>
+                <div>
+                    <h2 class="work-experience__headline">My Experience</h1>
+                        <div class="work-experience__content">
+                            <h3 class="work-experience__subheadline">5+ Years Work Experience</h4>
+                                <p class="work-experience__content-info">I have a wide range of experiences from
+                                    Developing full websites from scratch to handling SEO,Marketing, and Graphic Design
+                                    for Companies</p>
+                        </div>
+                </div>
+                <div class="clearfix">
+                    <div class="work-experience__work-img ">
+                        <img class="work-experience__work-img " src="img/Webcorrectly.png">
+                    </div>
+                    <div class="work-experience__text">
+                        <h2 class="work-experience__company"></h2>
+                        <h3 class="work-experience__work-title">Wordpress & Shopify Developer</h3>
+                        <h5 class="work-experience__date">June 2019 - (Present)</h5>
+                        <p class="work-experience__description"></p>
+                        <ul class="work-experience__list">
+                            <li class="work-experience__list--style">Maintain Websites for Clients either in Wordpress or Shopify</li>
+                            <li class="work-experience__list--style">Improved Wordpress skills by creating and editing themes</li>
+                            <li class="work-experience__list--style">Create custom functional or styles depending on the clients needs</li>
+                        </ul>
+                    </div>
+                    <hr class="work-experience__spacer--space">
+                </div>
+                <div class="clearfix">
+                    <div>
+                        <img class="work-experience__work-img " src="img/wsw_logo_wide_white.png">
+                    </div>
+                    <div class="work-experience__text">
+                        <h2 class="work-experience__company"></h2>
+                        <h3 class="work-experience__work-title">Sound Editor & Web Developer</h3>
+                        <h5 class="work-experience__date">March 2018 - June 2019</h5>
+                        <p class="work-experience__description">Worked on Web Application using React.JS that retrieved
+                            from the Databases dates of Events and when the presentation will expire and allowed
+                            functionality to Search and quickly expire, remove, or view companies’ data. </p>
+                        <ul class="work-experience__list">
+                            <li></li>
+                        </ul>
+                    </div>
+                    <hr class="work-experience__spacer--space">
+                </div>
+                <div class="clearfix">
+                    <div>
+                        <img class="work-experience__work-img " src="img/raz-logo.png">
+                    </div>
+                    <div class="work-experience__text">
+                        <h2 class="work-experience__company"></h2>
+                        <h3 class="work-experience__work-title">Web Developer/ IT Tech / Graphic Designer</h3>
+                        <h5 class="work-experience__date">January 2017 - June 2017</h5>
+                        <p class="work-experience__description"></p>
+                        <ul class="work-experience__list">
+                            <li class="work-experience__list--style">Several Responsibilities ranging from helping around
+                                the warehouse for any computer related problems to
+                                Graphic Design and Web Development.</li>
+                            <li class="work-experience__list--style">Worked on Maintaining several website including
+                                making changes to appearance of the site and
+                                implanting new functionality.</li>
+                            <li class="work-experience__list--style">Responsible for creating a new website for the brand- new line of products.
+                            </li>
+                            <li class="work-experience__list--style">In charge of weekly email marketing campaign on
+                                mail chimp. This involved creating all assets needed
+                                on graphic design software and creating the code
+                                framework for the emails. </li>
+                            <li class="work-experience__list--style">Create banner advertisement for the main website.
+                            </li>
+                            <li class="work-experience__list--style">Deepened WordPress and WooCommerce
+                                experience by recommending the platform for the
+                                new line of products
+                            </li>
+                            <li class="work-experience__list--style">Email Marketing experienced gained through the
+                                weekly email blasts
+                            </li>
+                            <li class="work-experience__list--style">Photoshop skill improved by creating weekly
+                                advertisement
+                            </li>
+                            <li class="work-experience__list--style">Web Development knowledge increased over daily
+                                involve in website maintenance and changes
+                            </li>
+
+                        </ul>
+                    </div>
+                    <hr class="work-experience__spacer--space">
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="section education" id="5">
+        <div class="wrapper">
+            <div class="education__headline">
+                <h2>Education</h2>
+                <div>
+                    <img src="img/WP-Logo.png">
+                </div>
+                <div>
+                    <h3 class="education__school-text">William Paterson University</h3>
+                    <h4 class="education__major-text">Accounting Bachelors of Science and Japanese Bachelors of Arts
+                    </h4>
+                    <h5 class="education__date-text">Sept 2006-Dec 2013</h5>
+                </div>
+                <div>
+                    <hr>
+                </div>
+                <div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section portfolio" id="6">
+        <div style="padding-top: 80px;
+    padding-bottom: 100px;">
+            <div class="wrapper">
+                <div>
+                    <h2 class="portfolio__headline">Portfolio</h2>
+                    <div>
+                        <img class="portfolio__image" src="img/mockup-images/mockup-images/mockup-1 (Custom).png">
+                        <h3 class="portfolio__work-name">YourFirstMudRun</h3>
+<br>
+                        <div class="clearfix">
+                            <p class="portfolio__work-description">YourFirstMudRun is a beginner Obstacle course race similar to Tough Mudder or Spartan race. <br><br> </p>
+                            <br>
+                            <ul>
+                                <li class="portfolio__skill-used">Wordpress</li>
+                                <li class="portfolio__skill-used">Wordpress Theme Development</li>
+                                <li class="portfolio__skill-used">SEO</li>
+                            </ul>
+                            <br>
+                            <a href="http://www.YourFirstMudRun.com" class="portfolio__btn" target="_blank">Visit site</a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <hr>
+               
+
+            </div>
+        </div>
+    </div>
+    <div class="section" id="7" style="background-color:#d3d3d3;position: relative;">
+        <div style="">
+            <div style="font-size: 56px;
+    color: black;
+    padding-bottom: 100px;
+    ">
+                <h1>Contact Me</h1>
+                <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9aMfydUxAW9REeCGJOE160iAPjaRVyFE&extension=.js"></script>
+                <script src="https://cdn.mapkit.io/v1/infobox.js"></script>
+                <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+                <link href="https://cdn.mapkit.io/v1/infobox.css" rel="stylesheet">
+                <script>
+                    google.maps.event.addDomListener(window, 'load', init);
+                    var map, markersArray = [];
+
+                    function bindInfoWindow(marker, map, location) {
+                        google.maps.event.addListener(marker, 'click', function () {
+                            function close(location) {
+                                location.ib.close();
+                                location.infoWindowVisible = false;
+                                location.ib = null;
+                            }
+
+                            if (location.infoWindowVisible === true) {
+                                close(location);
+                            } else {
+                                markersArray.forEach(function (loc, index) {
+                                    if (loc.ib && loc.ib !== null) {
+                                        close(loc);
+                                    }
+                                });
+
+                                var boxText = document.createElement('div');
+                                boxText.style.cssText = 'background: #fff;';
+                                boxText.classList.add('md-whiteframe-2dp');
+
+                                function buildPieces(location, el, part, icon) {
+                                    if (location[part] === '') {
+                                        return '';
+                                    } else if (location.iw[part]) {
+                                        switch (el) {
+                                            case 'photo':
+                                                if (location.photo) {
+                                                    return '<div class="iw-photo" style="background-image: url(' + location.photo + ');"></div>';
+                                                } else {
+                                                    return '';
+                                                }
+                                                break;
+                                            case 'iw-toolbar':
+                                                return '<div class="iw-toolbar"><h3 class="md-subhead">' + location.title + '</h3></div>';
+                                                break;
+                                            case 'div':
+                                                switch (part) {
+                                                    case 'email':
+                                                        return '<div class="iw-details"><i class="material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span><a href="mailto:' + location.email + '" target="_blank">' + location.email + '</a></span></div>';
+                                                        break;
+                                                    case 'web':
+                                                        return '<div class="iw-details"><i class="material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span><a href="' + location.web + '" target="_blank">' + location.web_formatted + '</a></span></div>';
+                                                        break;
+                                                    case 'desc':
+                                                        return '<label class="iw-desc" for="cb_details"><input type="checkbox" id="cb_details"/><h3 class="iw-x-details">Details</h3><i class="material-icons toggle-open-details"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><p class="iw-x-details">' + location.desc + '</p></label>';
+                                                        break;
+                                                    default:
+                                                        return '<div class="iw-details"><i class="material-icons"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span>' + location[part] + '</span></div>';
+                                                        break;
+                                                }
+                                                break;
+                                            case 'open_hours':
+                                                var items = '';
+                                                if (location.open_hours.length > 0) {
+                                                    for (var i = 0; i < location.open_hours.length; ++i) {
+                                                        if (i !== 0) {
+                                                            items += '<li><strong>' + location.open_hours[i].day + '</strong><strong>' + location.open_hours[i].hours + '</strong></li>';
+                                                        }
+                                                        var first = '<li><label for="cb_hours"><input type="checkbox" id="cb_hours"/><strong>' + location.open_hours[0].day + '</strong><strong>' + location.open_hours[0].hours + '</strong><i class="material-icons toggle-open-hours"><img src="//cdn.mapkit.io/v1/icons/keyboard_arrow_down.svg"/></i><ul>' + items + '</ul></label></li>';
+                                                    }
+                                                    return '<div class="iw-list"><i class="material-icons first-material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><ul>' + first + '</ul></div>';
+                                                } else {
+                                                    return '';
+                                                }
+                                                break;
+                                        }
+                                    } else {
+                                        return '';
+                                    }
+                                }
+
+                                boxText.innerHTML =
+                                    buildPieces(location, 'photo', 'photo', '') +
+                                    buildPieces(location, 'iw-toolbar', 'title', '') +
+                                    buildPieces(location, 'div', 'address', 'location_on') +
+                                    buildPieces(location, 'div', 'web', 'public') +
+                                    buildPieces(location, 'div', 'email', 'email') +
+                                    buildPieces(location, 'div', 'tel', 'phone') +
+                                    buildPieces(location, 'div', 'int_tel', 'phone') +
+                                    buildPieces(location, 'open_hours', 'open_hours', 'access_time') +
+                                    buildPieces(location, 'div', 'desc', 'keyboard_arrow_down');
+
+                                var myOptions = {
+                                    alignBottom: true,
+                                    content: boxText,
+                                    disableAutoPan: true,
+                                    maxWidth: 0,
+                                    pixelOffset: new google.maps.Size(-140, -40),
+                                    zIndex: null,
+                                    boxStyle: {
+                                        opacity: 1,
+                                        width: '280px'
+                                    },
+                                    closeBoxMargin: '0px 0px 0px 0px',
+                                    infoBoxClearance: new google.maps.Size(1, 1),
+                                    isHidden: false,
+                                    pane: 'floatPane',
+                                    enableEventPropagation: false
+                                };
+
+                                location.ib = new InfoBox(myOptions);
+                                location.ib.open(map, marker);
+                                location.infoWindowVisible = true;
+                            }
+                        });
+                    }
+
+                    function init() {
+                        var mapOptions = {
+                            center: new google.maps.LatLng(40.78250672257301, -74.20569067469523),
+                            zoom: 10,
+                            gestureHandling: 'auto',
+                            fullscreenControl: false,
+                            zoomControl: true,
+                            disableDoubleClickZoom: true,
+                            mapTypeControl: false,
+                            scaleControl: false,
+                            scrollwheel: false,
+                            streetViewControl: false,
+                            draggable: false,
+                            clickableIcons: false,
+                            mapTypeId: google.maps.MapTypeId.ROADMAP,
+                            styles: [{ "stylers": [{ "saturation": 100 }, { "hue": "#fff700" }] }, { "featureType": "landscape", "stylers": [{ "color": "#ffdd00" }] }, { "featureType": "water", "stylers": [{ "color": "#718098" }, { "saturation": -35 }, { "lightness": 20 }] }, { "featureType": "poi", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "labels.text", "stylers": [{ "color": "#ffdd00" }, { "lightness": -38 }] }, { "featureType": "administrative", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffdd00" }] }, { "featureType": "road", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "stylers": [{ "weight": 0.7 }] }, { "featureType": "water", "elementType": "labels.text.fill", "stylers": [{ "color": "#ffffff" }] }]
+                        }
+                        var mapElement = document.getElementById('mapkit-9872');
+                        var map = new google.maps.Map(mapElement, mapOptions);
+                        var locations = [
+                            { "title": "Lyndhurst", "address": "Lyndhurst, NJ, USA", "desc": "", "tel": "", "int_tel": "", "email": "", "web": "", "web_formatted": "", "open": "", "time": "", "lat": 40.81201710000001, "lng": -74.1243063, "vicinity": "Lyndhurst", "open_hours": "", "marker": { "url": "https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi_hdpi.png", "scaledSize": { "width": 25, "height": 42, "f": "px", "b": "px" }, "origin": { "x": 0, "y": 0 }, "anchor": { "x": 12, "y": 42 } }, "iw": { "address": true, "desc": true, "email": true, "enable": true, "int_tel": true, "open": true, "open_hours": true, "photo": true, "tel": true, "title": true, "web": true } }
+                        ];
+                        for (i = 0; i < locations.length; i++) {
+                            marker = new google.maps.Marker({
+                                icon: locations[i].marker,
+                                position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+                                map: map,
+                                title: locations[i].title,
+                                address: locations[i].address,
+                                desc: locations[i].desc,
+                                tel: locations[i].tel,
+                                int_tel: locations[i].int_tel,
+                                vicinity: locations[i].vicinity,
+                                open: locations[i].open,
+                                open_hours: locations[i].open_hours,
+                                photo: locations[i].photo,
+                                time: locations[i].time,
+                                email: locations[i].email,
+                                web: locations[i].web,
+                                iw: locations[i].iw
+                            });
+                            markersArray.push(marker);
+
+                            if (locations[i].iw.enable === true) {
+                                bindInfoWindow(marker, map, locations[i]);
+                            }
+                        }
+                    }
+                </script>
+                <style>
+                    #mapkit-9872 {
+                        height: 400px;
+                        width: 100%;
+                    }
+                </style>
+                <div id='mapkit-9872'>
+                </div>
+                <div>
+                    <img alt="profile" src="img/IMG_20131103_150111302_HDR.jpg" style="max-width: 130px;border-radius: 50%;border: 2px solid white;z-index: 10;width: 100px;
+    height: 100px;
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    margin:auto;bottom: 800px;">
+                </div>
+                
+                
+                <!--
+                
+                <div class="container">
+                    <form action="action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:200px"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+            -->
+
+
+            
+               
+            </div>
+           
+    </div></div>
+
+    <div class="section" id="" style="background-color:green;">
+        <div style="padding-top: 80px;
+    padding-bottom: 100px;">
+
+<div className="wrapper">
+    <div id="icons" className="contact__inner-wrapper">
+    
+</div>
+</div>
+            
+        </div>
+    </div>
+    <div class="section" id="8" style="background-color:yellow;">
+        <div style="padding-top: 80px;
+    padding-bottom: 100px;">
+            
+        </div>
+    </div>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.js"></script>
+    <script src="node_modules/particles.js/particles.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="js/circlebars.js"></script>
+    <script src="js/Waypoints.js"></script>
+    <script src="/js/../js/smoothscrolling.js"></script>
+    
+</body>
+
+</html>

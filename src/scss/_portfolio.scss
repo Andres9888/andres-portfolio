@@ -1,0 +1,45 @@
+.portfolio {
+  background-color: lightgrey;
+  &__headline {
+    font-size: 67px;
+  }
+
+  &__image {
+    float: left;
+  }
+
+  &__work-name {
+    font-size: 26px;
+  }
+
+  &__work-description {
+    font-size: 16px;
+  }
+
+  &__skill-used {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    line-height: 32px;
+    display: inline;
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    background: red;
+    padding: 4px 9px;
+  }
+  &__btn{
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 3rem;
+    color:white;
+    border-color: #5b43d6;
+    border: 2px dotted red;
+    font-size: 1.8rem;
+
+    &:hover{
+
+        background-color: red;
+
+    }
+
+  }
+}
