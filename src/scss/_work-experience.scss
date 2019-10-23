@@ -52,16 +52,16 @@
 
   &__work-title {
     margin-bottom: 0;
-    line-height: 28px;
-    font-size: 26px;
+    line-height: 3.8rem;
+    font-size: 2.4rem;
     color: white;
   }
 
   &__date {
-    font-size: 16px;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
     font-weight: normal;
     margin-top: 0;
-    margin-bottom: 20px;
     color: white;
   }
 
@@ -74,8 +74,9 @@
 
   &__list {
     color: white;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     line-height: 1.7;
+    
     
   }
   &__list--style{
