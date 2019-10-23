@@ -21,6 +21,37 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet">
     <script src="drift.js"> </script>
 
+<<<<<<< HEAD
+=======
+    <!-- Start of Async Drift Code -->
+    <script>
+        "use strict";
+
+        !function () {
+            var t = window.driftt = window.drift = window.driftt || [];
+            if (!t.init) {
+                if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                    t.factory = function (e) {
+                        return function () {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function (e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function (t) {
+                        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+            }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('');
+    </script>
+    <!-- End of Async Drift Code -->
+>>>>>>> 9bfed600b19e5a45020e127c5c625cb870aa5ae5
 
 
 
@@ -616,7 +647,12 @@
     padding-bottom: 100px;
     ">
                 <h1>Contact Me</h1>
+<<<<<<< HEAD
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9aMfydUxAW9REeCGJOE160iAPjaRVyFE&extension=.js"></script>
+=======
+                <script
+                    src="https://maps.googleapis.com/maps/api/js?key=&extension=.js"></script>
+>>>>>>> 9bfed600b19e5a45020e127c5c625cb870aa5ae5
                 <script src="https://cdn.mapkit.io/v1/infobox.js"></script>
                 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
                 <link href="https://cdn.mapkit.io/v1/infobox.css" rel="stylesheet">
